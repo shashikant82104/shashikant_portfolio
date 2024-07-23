@@ -1,0 +1,37 @@
+.container {
+     position: relative;
+     width: 300px; /* Adjust as needed */
+     height: 300px; /* Adjust as needed */
+     overflow: hidden;
+ }
+ 
+ .text {
+     position: absolute;
+     bottom: 0;
+     animation: moveText 5s linear infinite;
+ }
+ 
+ .image {
+     position: absolute;
+     top: 0;
+     animation: moveImage 5s linear infinite;
+ }
+ 
+ @keyframes moveText {
+     0% {
+         transform: translateY(100%);
+     }
+     100% {
+         transform: translateY(-100%);
+     }
+ }
+ 
+ @keyframes moveImage {
+     0% {
+         transform: translateY(-100%);
+     }
+     100% {
+         transform: translateY(100%);
+     }
+ }
+ 
